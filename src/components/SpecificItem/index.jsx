@@ -6,6 +6,7 @@ export class SpecificItem extends Component {
     this.getSpecificItem();
   }
   getSpecificItem = async () => {
+    console.log(this.props);
     const { match } = this.props;
     const { params } = match;
     const { id } = params;
